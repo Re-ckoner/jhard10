@@ -27,31 +27,6 @@ import java.util.List;
 @RunWith(DataProviderRunner.class)
 public class GetNameFromFile {
 
-//    Path path;
-//    @Before
-//    public void createTempDir() throws IOException {
-//        Path tempPath = Paths.get("src");
-//        this.path = Files.createTempDirectory(tempPath, "tmp");
-//        // path.toFile().deleteOnExit();
-//
-//        System.out.println("Created temp dir "+path.toString());
-//
-//    }
-//
-//    @After
-//    public void deleteTempDir(){
-//        try{
-//            FileUtils.deleteDirectory(new File(path.toString()));
-//            System.out.println("deleted "+path.toString());
-//        }
-//        catch (Exception e)
-//        {
-//            System.out.println("not deleted "+path.toString());
-//            //do nothing
-//        }
-//
-//    }
-//
    @DataProvider
    public static Object[][] getName() throws IOException {
        BufferedReader in = new BufferedReader(new InputStreamReader(
